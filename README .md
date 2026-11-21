@@ -4,7 +4,7 @@ This project cleans and prepares real hourly electricity-demand data for the Tok
 
 ## Key findings
 
-![Electricity demand by temperature band](reports/figures/demand_by_temperature_band.png)
+![Electricity demand by temperature band](demand_by_temperature_band.png)
 
 - **Lowest demand: 16–20 °C.** At these temperatures, homes and offices need neither heating nor cooling. Average demand falls to **26.6 GW**, and the lowest single hour was 18.5 GW, at 06:00 on 4 May 2025 during Golden Week (15.9 °C).
 - **Peak demand: 34–36 °C.** Air-conditioning pushes average demand to **50.2 GW**, about **1.9×** the mild-weather level. The all-time hour in the data was **59.3 GW** at 13:00 on 2 Aug 2022, when Tokyo was 34.9 °C.
