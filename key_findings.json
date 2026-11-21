@@ -1,0 +1,20 @@
+{
+  "lowest_mean_demand_band": "16 to 18",
+  "lowest_mean_demand_gw": 26.64,
+  "highest_mean_demand_band": "34 to 36",
+  "highest_mean_demand_gw": 50.2,
+  "highest_peak_band": "34 to 36",
+  "highest_peak_gw": 59.3,
+  "coldest_band_mean_gw": 38.12,
+  "coldest_band": "-2 to 0",
+  "winter_peak_band": "0 to 2",
+  "winter_peak_gw": 51.79,
+  "record_hour": "2022-08-02 13:00:00+09:00",
+  "record_gw": 59.3,
+  "record_temp_c": 34.9,
+  "lowest_hour": "2025-05-04 06:00:00+09:00",
+  "lowest_gw": 18.53,
+  "lowest_temp_c": 15.9,
+  "daily_lowest_band": "16 to 18",
+  "summer_vs_mild_peak_ratio": 1.88
+}

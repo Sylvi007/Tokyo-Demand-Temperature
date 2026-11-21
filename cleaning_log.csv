@@ -1,0 +1,16 @@
+step,action,affected
+Data types,"datetime: text -> datetime64 (format %Y-%m-%d %H:%M:%S), localised to Asia/Tokyo",1
+Duplicates,"Checked full-row duplicates (0) and duplicate timestamps (0); dropped any found, keeping the first",0
+Missing values,Re-indexed to a complete hourly timeline (missing hours would appear as NA rows),0
+Incorrect values,"Range checks (temp (-20.0, 45.0) °C, RH 0-100 %, sunshine 0-1 h, demand (1000.0, 7000.0) 万kW); values outside set to NA",0
+Consistency,usage_rate matches demand / supply x 100 (within 1 point) - checked,0
+Consistency,Solar output is 0 between 20:00 and 04:00 - checked,0
+Consistency,Demand never exceeds supply capacity - checked,0
+Inconsistent values,"Hourly demand and the mean of TEPCO's 5-minute readings differ by >3 % (2025-01-23, 2026-02-09 cold snaps). Kept the official hourly value; flagged in demand_source_mismatch",8
+Incorrect values,"Hour-to-hour temperature jumps > 6.0 °C: 2 found; 2 confirmed as real (a nearby station cooled at the same time, e.g. summer thunderstorms) and kept, the rest set to NA",0
+Missing values,Weather gaps of <= 3 h filled by time interpolation (flagged in <column>_imputed),4
+Missing values,"Longer gaps left as NA on purpose (station outages of 1-3 days; interpolating would invent data): {'rh_chiba': 71, 'rh_kumagaya': 32, 'rh_utsunomiya': 82, 'rh_maebashi': 40}",225
+Missing values,Demand and Tokyo temperature (the analysis columns) have no missing values,0
+Units,"Power columns converted from 万kW (10 MW) to GW; columns renamed with units (_gw, _c, _pct, _h)",5
+Data types,Measurements float64 -> float32 (0.1 °C / 0.01 GW precision is kept); usage_rate -> Int16; flags -> bool,32
+Derived,"Added date, year, month, hour, weekday, season, is_holiday (JP national holidays + New Year + Obon), is_workday, temp_band (2 °C bands of Tokyo temperature)",9

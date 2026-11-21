@@ -1,0 +1,32 @@
+{
+  "before": {
+    "rows": 39744,
+    "columns": 34,
+    "missing_cells": 229,
+    "missing_hours_in_timeline": 0,
+    "duplicate_timestamps": 0,
+    "duplicate_rows": 0,
+    "out_of_range_values": 0,
+    "demand_sources_disagree_gt3pct": 8,
+    "unflagged_demand_disagreements": 8,
+    "datetime_dtype": "str",
+    "power_unit": "\u4e07kW (10 MW)",
+    "analysis_columns_ready": 0,
+    "memory_mb": 11.57
+  },
+  "after": {
+    "rows": 39744,
+    "columns": 45,
+    "missing_cells": 225,
+    "missing_hours_in_timeline": 0,
+    "duplicate_timestamps": 0,
+    "duplicate_rows": 0,
+    "out_of_range_values": 0,
+    "demand_sources_disagree_gt3pct": 8,
+    "unflagged_demand_disagreements": 0,
+    "datetime_dtype": "datetime64[us]",
+    "power_unit": "GW",
+    "analysis_columns_ready": 4,
+    "memory_mb": 6.32
+  }
+}
