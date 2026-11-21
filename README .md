@@ -27,7 +27,7 @@ This project cleans and prepares real hourly electricity-demand data for the Tok
 
 The table above is a selection. Every 2 °C band, a workday-only version and the daily figures are in [`reports/report.md`](reports/report.md).
 
-![Daily peak demand vs temperature](reports/figures/daily_peak_vs_temperature.png)
+![Daily peak demand vs temperature](daily_peak_vs_temperature.png)
 
 ## Data
 
